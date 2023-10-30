@@ -85,7 +85,7 @@ const students = [
 ];
 
 // find : We pass a function describing the array or object we need to find and it return the *first* object or array that meets the condition
-// if no element mmets the condition undefined is returned
+// if no element meets the condition undefined is returned
 
 console.log(students.find(obj =>
     {
@@ -96,3 +96,29 @@ console.log(students.find(obj =>
         {
             return obj.class === 'four'
         })); // undefined
+
+// concat : joins two arrays
+
+const names2 = ['Esa','Alian','Saba','yusra'];
+
+const names3 = arr1.concat(names2)
+
+
+//with Es6 we can do this very easily with spread operator i.e ...
+
+const names = [...arr1,...names2]
+
+// instead of variable names we can also use actual values
+
+const names1 = [...['Esa','Alian','Saba','yusra'],...[1, 2, 3, 4, 5, 6]]
+
+//slice method basically like cutting a slice of cake you define the size of the slice u want and you get that particular slice from the whole cake 
+//with slice method you pass index as parameters 
+
+const sliceExample = names.slice(3,6)
+
+//value at index 3 will be included wile value at index 5 wont be included
+
+console.log(sliceExample);
+console.log(names);
+
