@@ -103,7 +103,6 @@ const names2 = ['Esa','Alian','Saba','yusra'];
 
 const names3 = arr1.concat(names2)
 
-
 //with Es6 we can do this very easily with spread operator i.e ...
 
 const names = [...arr1,...names2]
@@ -117,8 +116,28 @@ const names1 = [...['Esa','Alian','Saba','yusra'],...[1, 2, 3, 4, 5, 6]]
 
 const sliceExample = names.slice(3,6)
 
-//value at index 3 will be included wile value at index 5 wont be included
+//value at index 3 will be included while value at index 5 wont be included
 
 console.log(sliceExample);
 console.log(names);
+
+// array and string manipulation methods
+
+// join method takes all the elements from arrays and join them in a string 
+
+const areesha = ['a','r','e','e','s','h','a']
+
+console.log(areesha.join()) // output a,r,e,e,s,h,a
+
+// if we dont want these commas in between we need to just add inverted commas in the bracket like
+
+console.log(areesha.join('')) // output areesha 
+
+// with this if we want any kind of seperator between the elements we can enetr between ''
+
+console.log(areesha.join('='))  // output a=r=e=e=s=h=a
+console.log(areesha.join('-')) // output a-r-e-e-s-h-a
+console.log(areesha.join('+')) // output a+r+e+e+s+h+a
+
+
 
